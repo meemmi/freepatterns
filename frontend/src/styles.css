@@ -1,0 +1,321 @@
+/*koko sivua koskevat määritykset */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+
+/*sivun rungon määritykset*/
+body{
+    background-color: #cfdaee;
+}
+
+#logo-text {
+    font-size: 0.55em;
+    font-family: 'EB Garamond', 'serif';
+    margin-left: 36%;
+    margin-bottom: 4%;
+}
+
+/*sivun rungon määritykset*/
+.site{
+    max-width: 88%;
+    margin: 3% auto auto auto;
+    height: auto;
+    background-color: #FAF7F0;
+    padding: 3%;
+}
+
+/*top menu*/
+header {
+  display: flex;
+}
+
+/*top menun contact us lista*/
+.header-top_menu-menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+
+/*top menun contact us linkki*/
+#header-top_menu-menu-click {
+  display: block;
+  line-height: 3.5rem;
+  text-align: center;
+  font-size: 1em;
+}
+
+/*sivun nimi ja prosentit millä leveydellä otsikko näkyy*/
+#header-site_name {
+    font-family: 'EB Garamond', serif;
+    margin-left: 40%;
+    width: 85%;
+    font-size: 3em;
+}
+
+/*prosentit millä leveydellä contact us linnki näkyy*/
+.header-top_menu {
+  width: 15%;
+}
+
+/*pääsisältö*/
+main {
+    /*margin-top: 3%;*/
+     font-size: 2em;
+}
+
+/*etuotsikko, tekstisisältö ja kuva*/
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*etusivun kuva*/
+#container-image{
+    max-width: 60%;
+}
+
+/*etusivun otsikko & teksti*/
+.container-text{
+    max-width: 40%;
+    align-self: flex-start;
+    margin-top: 5%;
+}
+
+/*etusivun teksti*/
+#container-p{
+    margin-top: 8%;
+}
+
+
+#gallery-header{
+    margin-top: 6%;
+    margin-left: 45%;
+    margin-bottom: 3%;
+    font-size: 1em;
+}
+
+
+
+/*filtervalikko*/
+select{
+    height: 50px;
+    width: 200px;
+    font-size: 1em;
+    border-radius: 6px;
+    background-color: #FAF7F0;
+}
+
+#filter-header {
+    font-size: 0.85em;
+}
+
+.gallery-container-filter{
+    margin-top: 3%;
+    font-size: 0.70em;
+}
+
+#gallery-container-filter-pattern_type{
+    margin-top: 3%;
+    font-size: 0.70em;
+}
+
+/*filtervalikko*/
+
+
+
+
+/*kuvagalleria*/
+.gallery-container {
+    display: flex;
+    margin-bottom: 7%;
+}
+
+.filter {
+    width: 15%;
+    padding: 20px;
+    position: sticky;
+}
+
+
+.gallery {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.item {
+    width: 25%;
+    margin-bottom: 3%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gallery-picture-header {
+    font-size: 0.5em;
+    margin-top: 0.5%;
+    margin-bottom: 0.6%;
+}
+
+.gallery-picture-description {
+    font-size: 0.5em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.04);
+}
+
+.gallery-item-header-text {
+    font-size: 1em;
+    color: #333;
+    margin-top: 2%;
+}
+
+.gallery-item-header {
+    font-size: 1em;
+    margin-bottom: 0;
+    font-weight: normal;
+
+}
+/*kuvagalleria*/
+
+
+
+
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    display: none;
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+/*alavalikko*/
+footer{
+    font-size: 2em;
+    border-top: 1px solid black;
+}
+
+
+
+
+
+
+
+/* tyylimäärittelyt erikokoisille näytöille*/
+
+/* keskikokoinen näyttö  */
+@media only screen and (max-width: 1500px) {
+#logo-text {
+    margin-bottom: 0%;
+    margin-left: 30%;
+    font-size: 0.7em;
+}
+
+#header-top_menu-menu-click {
+  font-size: 1.05em;
+}
+
+.gallery-container {
+   display: block;
+   margin-bottom: 7%;
+}
+
+.filter {
+    width: 100%;
+    display: flex;
+    margin-left: 22%;
+}
+
+.gallery-container-filter{
+    display: flex;
+    margin-left: 1.5%;
+}
+
+.gallery {
+    width: 100%;
+}
+}
+
+
+
+
+/* mobiili */
+@media only screen and (max-width: 600px) {
+
+ /*top menun contact us linkki*/
+ #header-top_menu-menu-click {
+        font-size: 1em;
+ }
+
+ /*sivun nimi ja prosentit millä leveydellä otsikko näkyy*/
+ #header-site_name {
+        margin-left: 0%;
+        width: 85%;
+        font-size: 2em;
+ }
+
+#logo-text{
+    display: none;
+}
+
+.filter {
+    width: 100%;
+    display: flex;
+    margin-left: 5%;
+}
+
+select{
+    height: 40px;
+    width: 130px;
+    font-size: 0.9em;
+}
+
+option {
+    font-size: 0.8em;
+}
+
+.gallery {
+    width: 100%;
+    display: block;
+}
+
+.item {
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+
+}
+
+/*minilaite
+@media only screen and (max-width: 319px) {
+    KORJAA asettelua
+    .header{
+        display: block;
+    }
+/*
