@@ -269,6 +269,7 @@ footer{
   flex: 2; /* Takes up 2 parts of the available space */
   font-size: 1em; /* Ensures text remains readable */
   line-height: 1.5; /* Improves readability */
+  margin-left: 100px;
 }
 
 #patternpage-itemName{
@@ -284,7 +285,19 @@ footer{
   font-size: 20px;
 }
 
+.external-link-button {
+  background-color: #cfdaee;
+  margin-top: 40px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
 
+#pattern-details-container {
+  margin-top: 40px;
+}
 
 
 

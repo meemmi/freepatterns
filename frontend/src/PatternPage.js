@@ -76,10 +76,27 @@ const PatternPage = ({ getPatternById }) => {
                 </div>
                 </div>
                 <div className='pattern-details'>
-                <h1 id='patternpage-itemName'>{pattern.itemName}</h1>
-                <h2 id='patternpage-creatorName'>{pattern.creator}</h2>
-                <p>{pattern.description}</p>
-                {/* Add more pattern details as needed */}
+                <h1 id='patternpage-creatorName'>{pattern.creator} {pattern.itemName}</h1>
+                {/*<h2 id='patternpage-itemName'>{pattern.itemName}</h2> */}
+                <p>{pattern.patternDescription}</p>
+                <p>{pattern.creatorDescription}</p>
+                <p id='pattern-details-container'><strong>RECOMMENDED FABRIC / THREAD</strong></p>
+                <p>{pattern.fabric}</p>
+                <p>supplies needed {pattern.supplies},  depending on the size.</p>
+                <p><strong>SIZES</strong></p>
+                <p>{pattern.sizes}</p>
+
+                <p><strong>DIFFICULTY</strong></p>
+                <p>{pattern.difficulty}</p>
+                {/* Here the button */}
+
+                <a
+                    href={pattern.externalLink} // Assuming you have an external link in your pattern data
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <button className="external-link-button">View full pattern</button>
+                </a>
                 </div>
                 </div>
             
