@@ -45,21 +45,29 @@ function App() {
 
   return (
     <Router>
-    <div className="App">
-      <Navbar />
-      <main>
-        <p id="logo-text">Stylish sewing and knitting patterns for your next project</p>
-        <div className="gallery-container">
-          <Filter filters={filters} setFilters={setFilters} />
-          <Gallery patternData={patternData} filters={filters} />
-        </div>
-      </main>
-      <ScrollToTopButton />
-      <footer></footer>
-      <Routes>
-      <Route path="/pattern/:_id" element={<PatternPage getPatternById={getPatternById} />} />
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <main>
+                <p id="logo-text">Stylish sewing and knitting patterns for your next project</p>
+                <div className="gallery-container">
+                  <Filter filters={filters} setFilters={setFilters} />
+                  <Gallery patternData={patternData} filters={filters} />
+                </div>
+              </main>
+            }
+          />
+          <Route
+            path="/pattern/:_id"
+            element={<PatternPage getPatternById={getPatternById} />}
+          />
         </Routes>
-    </div>
+        <ScrollToTopButton />
+        <footer></footer>
+      </div>
     </Router>
   );
 }

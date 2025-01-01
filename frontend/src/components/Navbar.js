@@ -5,12 +5,12 @@ import '../App.css';
 const Navbar = () => {
     return (
         <header className="header">
-            <a id="header-site_name" href="index.html">free patterns</a>
+            <a id="header-site_name" href="/">free patterns</a>
 
             <nav className="header-top_menu">
                 <ul className="header-top_menu-menu">
                     <li id="header-top_menu-menu-click">
-                        <a href="contact.html">CONTACT</a>
+                        <a href="/contact">CONTACT</a>
                     </li>
                     
                 </ul>
