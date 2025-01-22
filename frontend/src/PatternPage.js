@@ -30,14 +30,6 @@ const PatternPage = ({ getPatternById }) => {
 
     return (
         <div className="site">
-            {/*        <header className="header">
-                <a id="header-site_name" href="/">Free Patterns</a>
-                <nav className="header-top_menu">
-                    <ul className="header-top_menu-menu">
-                        <li id="header-top_menu-menu-click"><a href="/contact">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </header> */}
 
             <main>
             <p id="logo-text">Stylish sewing and knitting patterns for your next project</p>

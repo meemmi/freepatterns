@@ -16,7 +16,7 @@ body{
 
 #logo-text {
   font-size: 0.55em;
-  font-family: 'EB Garamond', 'serif';
+  font-family: 'Roboto Condensed', sans-serif;
   margin-left: 36%;
   margin-bottom: 4%;
 }
@@ -54,7 +54,7 @@ font-size: 1em;
 /*sivun nimi ja prosentit millä leveydellä otsikko näkyy*/
 #header-site_name {
   font-family: 'EB Garamond', serif;
-  margin-left: 40%;
+  margin-left: 38%;
   width: 85%;
   font-size: 3em;
 }
@@ -108,7 +108,7 @@ main {
 select{
   height: 50px;
   width: 200px;
-  font-size: 1em;
+  font-size: 0.75em;
   border-radius: 6px;
   background-color: #FAF7F0;
 }

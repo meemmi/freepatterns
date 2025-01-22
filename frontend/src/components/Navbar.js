@@ -5,7 +5,7 @@ import '../App.css';
 const Navbar = () => {
     return (
         <header className="header">
-            <a id="header-site_name" href="/">free patterns</a>
+            <a id="header-site_name" href="/">FREE PATTERNS</a>
 
             <nav className="header-top_menu">
                 <ul className="header-top_menu-menu">
