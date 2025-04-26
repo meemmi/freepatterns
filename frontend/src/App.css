@@ -340,50 +340,93 @@ font-size: 1.05em;
 
 
 /* mobiili */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 667px) {
+
+
+  
+  .App{
+    max-width: 100%;
+    width: 100%;
+    margin: 6% 0 0 0;
+    padding: 0;
+    
+  }
+
+  .gallery-container{
+   
+    margin: 0;
+    padding: 0;
+  }
+  
+.gallery {
+  width: 100%;
+  display: flex;
+
+}
+
+.item {
+  width: 50%;
+
+}
+
+.gallery-picture-header {
+  font-size: 0.3em;
+}
+
+.gallery-picture-description {
+  font-size: 0.3em;
+}
+
+.item .gallery-item-img {
+    width: 75%;
+   
+}
 
 /*top menun contact us linkki*/
 #header-top_menu-menu-click {
-      font-size: 1em;
+      font-size: 0.8em;
+}
+
+.header-top_menu {
+  margin-right: 3%;
 }
 
 /*sivun nimi ja prosentit millä leveydellä otsikko näkyy*/
 #header-site_name {
       margin-left: 0%;
       width: 85%;
-      font-size: 2em;
+      font-size: 1.3em;
+      margin: 4% 0 0 2% ;
 }
+
 
 #logo-text{
   display: none;
 }
 
 .filter {
-  width: 100%;
+  width: 80%;
   display: flex;
-  margin-left: 5%;
+  margin: 0 0 0 7%;
+  padding: 0;
+  
 }
+
+.gallery-container-filter {
+  margin: 0 1.7% 0 0;
+}
+
 
 select{
-  height: 40px;
-  width: 130px;
-  font-size: 0.9em;
+  height: 25px;
+  width: 103px;
+  font-size: 0.45em;
 }
+
+
 
 option {
-  font-size: 0.8em;
+  font-size: 1em;
 }
-
-.gallery {
-  width: 100%;
-  display: block;
-}
-
-.item {
-  width: 100%;
-  margin-bottom: 4%;
-}
-
-
-}
-
+  }
+  
